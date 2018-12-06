@@ -41,25 +41,22 @@ struct DemoTokenStore: TokenStore {
         Token(
             name: "john.appleseed@gmail.com",
             issuer: "Google",
-            factor: .timer(period: 10)
+            factor: .timer(period: 30)
         ),
         Token(
             name: "johnappleseed",
             issuer: "GitHub",
-            factor: .timer(period: 20)
+            factor: .timer(period: 30)
         ),
         Token(
+            name: "johnappleseed",
             issuer: "Dropbox",
             factor: .timer(period: 30)
         ),
         Token(
-            name: "john@appleseed.com",
-            factor: .counter(0)
-        ),
-        Token(
             name: "johnny.apple",
             issuer: "Facebook",
-            factor: .timer(period: 40)
+            factor: .timer(period: 30)
         ),
     ]
 

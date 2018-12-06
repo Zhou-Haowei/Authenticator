@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* OTPAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* OTPAppDelegate.swift */; };
 		8B0028B511EB75920092DE18 /* ScannerOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0028B411EB75920092DE18 /* ScannerOverlayView.swift */; };
+		8DAEDF5B21B5F8DF0001EE3A /* WatchSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEDF5821B5F33F0001EE3A /* WatchSessionDelegate.swift */; };
+		8DFF7D2921B5187000D7D278 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DFF7D2721B5187000D7D278 /* Interface.storyboard */; };
+		8DFF7D2B21B5187100D7D278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DFF7D2A21B5187100D7D278 /* Assets.xcassets */; };
+		8DFF7D3221B5187100D7D278 /* WatchAuthenticatior Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8DFF7D3121B5187100D7D278 /* WatchAuthenticatior Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8DFF7D3721B5187100D7D278 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF7D3621B5187100D7D278 /* InterfaceController.swift */; };
+		8DFF7D3921B5187100D7D278 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF7D3821B5187100D7D278 /* ExtensionDelegate.swift */; };
+		8DFF7D3B21B5187100D7D278 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF7D3A21B5187100D7D278 /* ComplicationController.swift */; };
+		8DFF7D3D21B5187200D7D278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DFF7D3C21B5187200D7D278 /* Assets.xcassets */; };
+		8DFF7D4121B5187200D7D278 /* WatchAuthenticatior.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8DFF7D2521B5187000D7D278 /* WatchAuthenticatior.app */; };
+		8DFF7D5121B5283600D7D278 /* CodeTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF7D5021B5283600D7D278 /* CodeTableRowController.swift */; };
+		8DFF7D5321B5301200D7D278 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF7D5221B5301200D7D278 /* SessionDelegate.swift */; };
+		8DFF7D5721B551DA00D7D278 /* FailToConnectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF7D5621B551DA00D7D278 /* FailToConnectController.swift */; };
+		8DFF7D5921B556F200D7D278 /* NoDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF7D5821B556F200D7D278 /* NoDataController.swift */; };
 		C910ADC11BF0315A00C988F5 /* TokenList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910ADC01BF0315A00C988F5 /* TokenList.swift */; };
 		C9204A851E886A3500998D3E /* Acknowledgements.html in Resources */ = {isa = PBXBuildFile; fileRef = C9204A841E886A3500998D3E /* Acknowledgements.html */; };
 		C92708AC19CFB0750033128B /* TokenListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92708AB19CFB0750033128B /* TokenListViewController.swift */; };
@@ -72,6 +85,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8DFF7D3321B5187100D7D278 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DFF7D3021B5187100D7D278;
+			remoteInfo = "WatchAuthenticatior Extension";
+		};
+		8DFF7D3F21B5187200D7D278 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DFF7D2421B5187000D7D278;
+			remoteInfo = WatchAuthenticatior;
+		};
 		C9906A3C1812522100BAEF53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -89,6 +116,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		8DFF7D4721B5187200D7D278 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8DFF7D3221B5187100D7D278 /* WatchAuthenticatior Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DFF7D4921B5187200D7D278 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8DFF7D4121B5187200D7D278 /* WatchAuthenticatior.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C944A5531A7ECA5000E08B1E /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -110,6 +159,21 @@
 		8B0028B411EB75920092DE18 /* ScannerOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerOverlayView.swift; sourceTree = "<group>"; };
 		8B2B8AE1118BA49F00437315 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		8BF5147F118799AE005C936F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DAEDF5821B5F33F0001EE3A /* WatchSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionDelegate.swift; sourceTree = "<group>"; };
+		8DFF7D2521B5187000D7D278 /* WatchAuthenticatior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchAuthenticatior.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DFF7D2821B5187000D7D278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8DFF7D2A21B5187100D7D278 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DFF7D2C21B5187100D7D278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DFF7D3121B5187100D7D278 /* WatchAuthenticatior Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchAuthenticatior Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DFF7D3621B5187100D7D278 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8DFF7D3821B5187100D7D278 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8DFF7D3A21B5187100D7D278 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		8DFF7D3C21B5187200D7D278 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DFF7D3E21B5187200D7D278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DFF7D5021B5283600D7D278 /* CodeTableRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTableRowController.swift; sourceTree = "<group>"; };
+		8DFF7D5221B5301200D7D278 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		8DFF7D5621B551DA00D7D278 /* FailToConnectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailToConnectController.swift; sourceTree = "<group>"; };
+		8DFF7D5821B556F200D7D278 /* NoDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataController.swift; sourceTree = "<group>"; };
 		C910ADC01BF0315A00C988F5 /* TokenList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenList.swift; sourceTree = "<group>"; };
 		C91CDAEE214EEA82006488F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C91CDAFD214EF044006488F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -208,6 +272,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8DFF7D2E21B5187100D7D278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9906A2B1812522100BAEF53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,6 +302,7 @@
 			children = (
 				1D3623250D0F684500981E51 /* OTPAppDelegate.swift */,
 				C9EB448F1C52AE4500ACFA87 /* AppController.swift */,
+				8DFF7D5221B5301200D7D278 /* SessionDelegate.swift */,
 				C9EB448D1C52A74200ACFA87 /* Component.swift */,
 				C9F7A8621C4F2E200082E5AE /* Data Store */,
 				C981BBF21C5094A500A30CBA /* Root Component */,
@@ -249,6 +321,8 @@
 				1D6058910D05DD3D006BFB54 /* Authenticator.app */,
 				C9906A2E1812522100BAEF53 /* AuthenticatorTests.xctest */,
 				C9A262CD1E170BD4004E6CEB /* AuthenticatorScreenshots.xctest */,
+				8DFF7D2521B5187000D7D278 /* WatchAuthenticatior.app */,
+				8DFF7D3121B5187100D7D278 /* WatchAuthenticatior Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -259,6 +333,8 @@
 				C97B68CB17D964D4005D1FE0 /* Authenticator */,
 				C9906A331812522100BAEF53 /* AuthenticatorTests */,
 				C9A262CE1E170BD4004E6CEB /* AuthenticatorScreenshots */,
+				8DFF7D2621B5187000D7D278 /* WatchAuthenticatior */,
+				8DFF7D3521B5187100D7D278 /* WatchAuthenticatior Extension */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				C944A5661A7F772500E08B1E /* Configuration */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -292,6 +368,32 @@
 				C9A262DC1E177437004E6CEB /* SimulatorStatusMagiciOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DFF7D2621B5187000D7D278 /* WatchAuthenticatior */ = {
+			isa = PBXGroup;
+			children = (
+				8DFF7D2721B5187000D7D278 /* Interface.storyboard */,
+				8DFF7D2A21B5187100D7D278 /* Assets.xcassets */,
+				8DFF7D2C21B5187100D7D278 /* Info.plist */,
+			);
+			path = WatchAuthenticatior;
+			sourceTree = "<group>";
+		};
+		8DFF7D3521B5187100D7D278 /* WatchAuthenticatior Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8DFF7D5021B5283600D7D278 /* CodeTableRowController.swift */,
+				8DFF7D3A21B5187100D7D278 /* ComplicationController.swift */,
+				8DFF7D3821B5187100D7D278 /* ExtensionDelegate.swift */,
+				8DFF7D5621B551DA00D7D278 /* FailToConnectController.swift */,
+				8DFF7D3621B5187100D7D278 /* InterfaceController.swift */,
+				8DFF7D5821B556F200D7D278 /* NoDataController.swift */,
+				8DFF7D3C21B5187200D7D278 /* Assets.xcassets */,
+				8DFF7D3E21B5187200D7D278 /* Info.plist */,
+				8DAEDF5821B5F33F0001EE3A /* WatchSessionDelegate.swift */,
+			);
+			path = "WatchAuthenticatior Extension";
 			sourceTree = "<group>";
 		};
 		C931A5FB1BFF6F3A00706A1C /* Tools */ = {
@@ -533,15 +635,51 @@
 				C910ADBF1BF00ABF00C988F5 /* Lint */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				C944A5531A7ECA5000E08B1E /* Copy Frameworks */,
+				8DFF7D4921B5187200D7D278 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8DFF7D4021B5187200D7D278 /* PBXTargetDependency */,
 			);
 			name = Authenticator;
 			productName = Authenticator;
 			productReference = 1D6058910D05DD3D006BFB54 /* Authenticator.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8DFF7D2421B5187000D7D278 /* WatchAuthenticatior */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DFF7D4821B5187200D7D278 /* Build configuration list for PBXNativeTarget "WatchAuthenticatior" */;
+			buildPhases = (
+				8DFF7D2321B5187000D7D278 /* Resources */,
+				8DFF7D4721B5187200D7D278 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DFF7D3421B5187100D7D278 /* PBXTargetDependency */,
+			);
+			name = WatchAuthenticatior;
+			productName = WatchAuthenticatior;
+			productReference = 8DFF7D2521B5187000D7D278 /* WatchAuthenticatior.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8DFF7D3021B5187100D7D278 /* WatchAuthenticatior Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DFF7D4621B5187200D7D278 /* Build configuration list for PBXNativeTarget "WatchAuthenticatior Extension" */;
+			buildPhases = (
+				8DFF7D2D21B5187100D7D278 /* Sources */,
+				8DFF7D2E21B5187100D7D278 /* Frameworks */,
+				8DFF7D2F21B5187100D7D278 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchAuthenticatior Extension";
+			productName = "WatchAuthenticatior Extension";
+			productReference = 8DFF7D3121B5187100D7D278 /* WatchAuthenticatior Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		C9906A2D1812522100BAEF53 /* AuthenticatorTests */ = {
 			isa = PBXNativeTarget;
@@ -586,13 +724,23 @@
 			attributes = {
 				CLASSPREFIX = OTP;
 				LastSwiftMigration = 0700;
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Matt Rubin";
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = WD7ETSN9J9;
+						DevelopmentTeam = 768Y65N3X6;
 						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					8DFF7D2421B5187000D7D278 = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 768Y65N3X6;
+						ProvisioningStyle = Automatic;
+					};
+					8DFF7D3021B5187100D7D278 = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 768Y65N3X6;
 						ProvisioningStyle = Automatic;
 					};
 					C9906A2D1812522100BAEF53 = {
@@ -612,6 +760,7 @@
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -620,6 +769,8 @@
 				1D6058900D05DD3D006BFB54 /* Authenticator */,
 				C9906A2D1812522100BAEF53 /* AuthenticatorTests */,
 				C9A262CC1E170BD4004E6CEB /* AuthenticatorScreenshots */,
+				8DFF7D2421B5187000D7D278 /* WatchAuthenticatior */,
+				8DFF7D3021B5187100D7D278 /* WatchAuthenticatior Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -633,6 +784,23 @@
 				C9204A851E886A3500998D3E /* Acknowledgements.html in Resources */,
 				C9BEAE6019C67FD800533385 /* LaunchScreen.xib in Resources */,
 				C9C6CCA21842E331000100C2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DFF7D2321B5187000D7D278 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DFF7D2B21B5187100D7D278 /* Assets.xcassets in Resources */,
+				8DFF7D2921B5187000D7D278 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DFF7D2F21B5187100D7D278 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DFF7D3D21B5187200D7D278 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,6 +865,7 @@
 				C9A1C1A61E501CB2009E65D6 /* InfoViewController.swift in Sources */,
 				C9D6C83F1906BD68004F0E08 /* SegmentedControlRow.swift in Sources */,
 				C968D1151CB4C639004ED7BB /* DisplayTime.swift in Sources */,
+				8DFF7D5321B5301200D7D278 /* SessionDelegate.swift in Sources */,
 				8B0028B511EB75920092DE18 /* ScannerOverlayView.swift in Sources */,
 				C9E11E1121543E2A00C1AA53 /* Menu.swift in Sources */,
 				C9CC09551BA91D1C008C54FE /* TableViewModel.swift in Sources */,
@@ -710,6 +879,20 @@
 				C98B1ECC1AB3CF0700C59E53 /* TokenRowCell.swift in Sources */,
 				C910ADC11BF0315A00C988F5 /* TokenList.swift in Sources */,
 				C9919CDD1BA64EED006237C1 /* TokenEntryForm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DFF7D2D21B5187100D7D278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DFF7D3921B5187100D7D278 /* ExtensionDelegate.swift in Sources */,
+				8DFF7D5921B556F200D7D278 /* NoDataController.swift in Sources */,
+				8DFF7D5721B551DA00D7D278 /* FailToConnectController.swift in Sources */,
+				8DFF7D3721B5187100D7D278 /* InterfaceController.swift in Sources */,
+				8DFF7D5121B5283600D7D278 /* CodeTableRowController.swift in Sources */,
+				8DFF7D3B21B5187100D7D278 /* ComplicationController.swift in Sources */,
+				8DAEDF5B21B5F8DF0001EE3A /* WatchSessionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,6 +924,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8DFF7D3421B5187100D7D278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DFF7D3021B5187100D7D278 /* WatchAuthenticatior Extension */;
+			targetProxy = 8DFF7D3321B5187100D7D278 /* PBXContainerItemProxy */;
+		};
+		8DFF7D4021B5187200D7D278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DFF7D2421B5187000D7D278 /* WatchAuthenticatior */;
+			targetProxy = 8DFF7D3F21B5187200D7D278 /* PBXContainerItemProxy */;
+		};
 		C9906A3D1812522100BAEF53 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1D6058900D05DD3D006BFB54 /* Authenticator */;
@@ -753,6 +946,17 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		8DFF7D2721B5187000D7D278 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DFF7D2821B5187000D7D278 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -762,9 +966,9 @@
 				BUNDLE_DISPLAY_NAME = "${PRODUCT_NAME} ∆";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
-				DEVELOPMENT_TEAM = WD7ETSN9J9;
+				DEVELOPMENT_TEAM = 768Y65N3X6;
 				INFOPLIST_FILE = Authenticator/Resources/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = me.mattrubin.authenticator.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steven.authenticator;
 				PRODUCT_NAME = Authenticator;
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -780,13 +984,279 @@
 				BUNDLE_DISPLAY_NAME = "${PRODUCT_NAME}";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
-				DEVELOPMENT_TEAM = WD7ETSN9J9;
+				DEVELOPMENT_TEAM = 768Y65N3X6;
 				INFOPLIST_FILE = Authenticator/Resources/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = me.mattrubin.authenticator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steven.authenticator;
 				PRODUCT_NAME = Authenticator;
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		8DFF7D4221B5187200D7D278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 768Y65N3X6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBSC_MODULE = WatchAuthenticatior_Extension;
+				INFOPLIST_FILE = WatchAuthenticatior/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steven.authenticator.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		8DFF7D4321B5187200D7D278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 768Y65N3X6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBSC_MODULE = WatchAuthenticatior_Extension;
+				INFOPLIST_FILE = WatchAuthenticatior/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steven.authenticator.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		8DFF7D4421B5187200D7D278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 768Y65N3X6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "WatchAuthenticatior Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steven.authenticator.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		8DFF7D4521B5187200D7D278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 768Y65N3X6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "WatchAuthenticatior Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steven.authenticator.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Release;
 		};
@@ -874,6 +1344,24 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DFF7D4621B5187200D7D278 /* Build configuration list for PBXNativeTarget "WatchAuthenticatior Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DFF7D4421B5187200D7D278 /* Debug */,
+				8DFF7D4521B5187200D7D278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DFF7D4821B5187200D7D278 /* Build configuration list for PBXNativeTarget "WatchAuthenticatior" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DFF7D4221B5187200D7D278 /* Debug */,
+				8DFF7D4321B5187200D7D278 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -22,16 +22,28 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 //
+//
+//  OTPAppDelegate.swift
+//  Authenticator
+//
+//  Modified by 周昊炜 on 2018/12/3.
+//
+
 
 import UIKit
 import OneTimePassword
 import SVProgressHUD
+import WatchConnectivity
 
 @UIApplicationMain
 class OTPAppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
 
     let app = AppController()
+    
+    private lazy var sessionDelegater: SessionDelegate = {
+        return SessionDelegate()
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let barButtonItemFont = UIFont.systemFont(ofSize: 17, weight: .light)
@@ -52,7 +64,12 @@ class OTPAppDelegate: UIResponder, UIApplicationDelegate {
 
         self.window?.rootViewController = app.rootViewController
         self.window?.makeKeyAndVisible()
-
+        
+        if( WCSession.isSupported()) {
+            WCSession.default.delegate = sessionDelegater
+            WCSession.default.activate()
+        }
+        
         return true
     }
 

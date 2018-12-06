@@ -1,5 +1,51 @@
+# Authenticator for Watch
+### Two-Factor Authentication Client for iOS & watchOS
+
+This project is forked from [mattrubin/Authenticator](https://github.com/mattrubin/Authenticator). Apple Watch support is added. Already tested on Apple Watch Series 3 42mm version. Clone this project for Apple Watch support.
+
+## Getting Started
+
+1. Check out the latest version of the project:
+
+   ```
+   git clone https://github.com/mattrubin/Authenticator.git
+   ```
+
+2. In the Authenticator directory, check out the project's dependencies:
+
+   ```
+   cd Authenticator
+   git submodule update --init --recursive
+   ```
+
+3. Open the `Authenticator.xcworkspace` file.
+
+> If you open the `.xcodeproj` instead, the project will not be able to find its dependencies.
+
+4.  Build and run the "WatchAuthenticator" scheme with the iPhone and Apple Watch simulators or devices
+
+
+
+## Some Issue
+
+1.  The token can't refresh be occasionally after the count down , user can perform a manual refresh by pressing the refresh button.
+2. The connection lost controller can't be presented once the connection with the phone is lost.
+
+Trying to figure out the solution of the issue above, I will update the code asap once I found the solution. Thanks for you understanding.
+
+## License
+
+This project is made available under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+## Software Screenshot
+
+<img src="fastlane/screenshots/en-US/Apple Watch Series 3 - 42mm - TokenList.png" width="250" alt="Screenshot of the token list" />
+
+<img src="fastlane/screenshots/en-US/Apple Watch Series 3 - 42mm - LostConnection.png" width="250" alt="Screenshot of the connection lost scene" />
+
 # Authenticator
-### Two-Factor Authentication Client for iOS.
+
+### Two-Factor Authentication Client for iOS 
 
 [![Build Status](https://api.travis-ci.org/mattrubin/Authenticator.svg?branch=develop)](https://travis-ci.org/mattrubin/Authenticator)
 [![Codecov](https://codecov.io/gh/mattrubin/Authenticator/branch/develop/graph/badge.svg)](https://codecov.io/gh/mattrubin/Authenticator)

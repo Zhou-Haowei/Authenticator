@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Authenticator-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Authenticator" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchAuthenticatior" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="t0s-oV-wPw" userLabel="Codes Table">
+                            <items>
+                                <tableRow identifier="CodeTableRow" id="xoy-0B-Ehh" customClass="CodeTableRowController" customModule="WatchAuthenticatior_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="IjG-4K-2pa">
+                                        <items>
+                                            <group width="1" height="0.0" alignment="left" animationDuration="1" layout="vertical" id="R0g-Qz-VKx">
+                                                <items>
+                                                    <group alignment="left" id="BEe-Jo-zoQ">
+                                                        <items>
+                                                            <label alignment="left" text="Issuer" textAlignment="left" minimumScaleFactor="0.0" id="jL9-X8-Spi">
+                                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                            </label>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="8"/>
+                                                    </group>
+                                                    <group alignment="left" id="sAA-HJ-L2M">
+                                                        <items>
+                                                            <label alignment="left" text="Account" textAlignment="left" minimumScaleFactor="0.0" id="BT4-u6-Q8d">
+                                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                            </label>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="8"/>
+                                                    </group>
+                                                    <group alignment="left" id="EFp-6s-6QF">
+                                                        <items>
+                                                            <label alignment="left" text="Code" textAlignment="left" minimumScaleFactor="0.0" id="jwd-GX-MFZ">
+                                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                            </label>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="8"/>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="accountLabel" destination="BT4-u6-Q8d" id="w5B-gu-sI0"/>
+                                        <outlet property="codeLabel" destination="jwd-GX-MFZ" id="N93-tM-l5z"/>
+                                        <outlet property="issuerLabel" destination="jL9-X8-Spi" id="rHi-OU-Yn3"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Refresh" id="W8I-8Z-qsg">
+                            <connections>
+                                <action selector="sendContext" destination="AgC-eL-Hgc" id="IQd-e7-hmV"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" text="Refresh in --:--" id="NLD-Nv-e92">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="button" destination="W8I-8Z-qsg" id="ia0-3H-y6h"/>
+                        <outlet property="codesTable" destination="t0s-oV-wPw" id="Zaj-qy-UcQ"/>
+                        <outlet property="timerLabel" destination="NLD-Nv-e92" id="IrB-DY-NYg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-154" y="160"/>
+        </scene>
+        <!--FailToConnect-->
+        <scene sceneID="k8g-OV-4Kj">
+            <objects>
+                <controller identifier="FailToConnectController" id="1rr-Mu-FdD" userLabel="FailToConnect" customClass="FailToConnectController" customModule="WatchAuthenticatior_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="DIn-J3-4Z1">
+                            <items>
+                                <label alignment="center" text="Please check the connection with your iPhone" textAlignment="center" numberOfLines="3" id="8P2-Wh-2Bl"/>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="38" bottom="8"/>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="117" y="160"/>
+        </scene>
+        <!--NoData-->
+        <scene sceneID="iZK-19-vcf">
+            <objects>
+                <controller id="FPY-tV-9y3" userLabel="NoData" customClass="NoDataController" customModule="WatchAuthenticatior_Extension">
+                    <items>
+                        <group width="1" alignment="center" id="AFQ-BS-Axi">
+                            <items>
+                                <label alignment="center" text="Please add your account on the iPhone App" textAlignment="center" numberOfLines="3" id="Lfu-48-Ecn"/>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="38" bottom="0.0"/>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="390" y="160"/>
+        </scene>
+    </scenes>
+</document>
