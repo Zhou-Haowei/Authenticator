@@ -33,19 +33,19 @@ class SessionDelegate: NSObject, WCSessionDelegate {
     
     override init() {
         do {
-            store = DemoTokenStore()
-//            if CommandLine.isDemo {
-//                // If this is a demo, use a token store of mock data, not backed by the keychain.
-//                store = DemoTokenStore()
-//            } else {
-//                store = try KeychainTokenStore(
-//                    keychain: Keychain.sharedInstance,
-//                    userDefaults: UserDefaults.standard
-//                )
-//            }
-//        } catch {
-//            // If the TokenStore could not be created, the app is unusable.
-//            fatalError("Failed to load token store: \(error)")
+            //store = DemoTokenStore()
+            if CommandLine.isDemo {
+                // If this is a demo, use a token store of mock data, not backed by the keychain.
+                store = DemoTokenStore()
+            } else {
+                store = try KeychainTokenStore(
+                    keychain: Keychain.sharedInstance,
+                    userDefaults: UserDefaults.standard
+                )
+            }
+        } catch {
+            // If the TokenStore could not be created, the app is unusable.
+            fatalError("Failed to load token store: \(error)")
         }
 
         super.init()
