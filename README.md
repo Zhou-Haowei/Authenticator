@@ -8,7 +8,7 @@ This project is forked from [mattrubin/Authenticator](https://github.com/mattrub
 1. Check out the latest version of the project:
 
    ```
-   git clone https://github.com/mattrubin/Authenticator.git
+   git clone https://github.com/Zhou-Haowei/Authenticator.git
    ```
 
 2. In the Authenticator directory, check out the project's dependencies:
@@ -39,8 +39,7 @@ This project is made available under the terms of the [MIT License](http://opens
 
 ## Software Screenshot
 
-<img src="fastlane/screenshots/en-US/Apple Watch Series 3 - 42mm - TokenList.png" width="250" alt="Screenshot of the token list" />
-
+<img src="fastlane/screenshots/en-US/Apple Watch Series 3 - 42mm - TokenList.png" width="250" alt="Screenshot of the token list" /> &nbsp;
 <img src="fastlane/screenshots/en-US/Apple Watch Series 3 - 42mm - LostConnection.png" width="250" alt="Screenshot of the connection lost scene" />
 
 # Authenticator
